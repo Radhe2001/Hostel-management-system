@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.LeaveStudentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtApplyLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Leave"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtApplyLeave"
+                android:layout_marginTop="60dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etReason"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Reason of leave"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPlaceOfVisit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cardReason"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etPlaceOfVisit"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Place of visit"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLeaveDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cardPlaceOfVisit"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etLeaveDate"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="datetime"
+                    android:hint="Leave date and time"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardReturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cardLeaveDate"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etReturn"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="datetime"
+                    android:hint="Return date and time"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cardReturn"
+                android:layout_marginTop="20dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etContact"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="datetime"
+                    android:hint="Guardian's contact number"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardContact"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="225dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp">
+
+
+                <Button
+                    android:id="@+id/btnButton"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:padding="10dp"
+                    android:text="Submit"
+                    android:textStyle="bold|italic"
+                    android:textSize="22sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

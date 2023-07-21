@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#884A39">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#482121">
+            <TextView
+                android:id="@+id/txtStudentRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Registration"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="30dp"
+                android:textColor="#F5EFE7"
+                android:layout_centerHorizontal="true"
+                android:textSize="35sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterRegId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/txtStudentRegister"
+                android:elevation="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentRegisterRegId"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Enter your registration Id"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:layout_below="@id/cardStudentRegisterRegId"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentRegisterName"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Enter your full name"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:layout_below="@id/cardStudentRegisterName"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentRegisterEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter your email"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/cardStudentRegisterEmail"
+                android:elevation="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentRegisterPhone"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="Enter your contact number"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/cardStudentRegisterPhone"
+                android:elevation="10dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentRegisterPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:hint="Enter Password"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterVarifyPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:layout_below="@id/cardStudentRegisterPassword"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentRegisterVarifyPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:hint="Re-enter Password"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentRegisterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardStudentRegisterVarifyPassword"
+                android:layout_marginTop="30dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="200dp"
+                app:cardCornerRadius="15dp">
+
+                <Button
+                    android:id="@+id/btnStudentRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Register"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    android:background="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

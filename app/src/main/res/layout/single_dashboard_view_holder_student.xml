@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txtRoomDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Details"
+                android:textStyle="italic|bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtRoomType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room type"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/txtRoomDetails"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtRoomPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/txtRoomType"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/btnBookNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book now"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/txtRoomPrice"
+                android:layout_marginLeft="130dp"
+                android:textSize="22sp"
+                android:layout_below="@id/txtRoomType"
+                android:textStyle="bold|italic"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

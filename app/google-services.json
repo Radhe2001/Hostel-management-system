@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824321920117",
+    "project_id": "hostelmanagement-c4a67",
+    "storage_bucket": "hostelmanagement-c4a67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824321920117:android:4f260faeae909752c5bc3c",
+        "android_client_info": {
+          "package_name": "com.radhe.hostelmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824321920117-adi4l3mmdfnfr513rk0atdca734cpgqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNXi2hcuEsQeyuWCfc7hQWvYViS6uUa1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824321920117-adi4l3mmdfnfr513rk0atdca734cpgqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

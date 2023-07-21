@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F1C27B">
+
+            <TextView
+                android:id="@+id/txtGreetings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Greetings of the day"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:id="@+id/txtNice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@id/txtGreetings"
+                android:text="Enjoy your day😀😀"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:id="@+id/txtStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNice"
+                android:text="Study well"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

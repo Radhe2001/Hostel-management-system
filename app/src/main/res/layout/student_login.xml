@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#884A39">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#482121">
+            <TextView
+                android:id="@+id/txtStudentLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Login"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="80dp"
+                android:textColor="#F5EFE7"
+                android:layout_centerHorizontal="true"
+                android:textSize="35sp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentLoginRegId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:elevation="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentLoginRegId"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Enter your registration Id"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentLoginPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardStudentLoginRegId"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etStudentLoginPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Enter Password"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardStudentLoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardStudentLoginPassword"
+                android:layout_marginTop="30dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="225dp"
+                app:cardCornerRadius="15dp">
+
+                <Button
+                    android:id="@+id/btnStudentLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Login"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    android:background="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtStudentLoginRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register | "
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/txtStudentLoginForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password ?"
+                android:layout_toEndOf="@id/txtStudentLoginRegister"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

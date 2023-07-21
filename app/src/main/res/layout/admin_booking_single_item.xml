@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtIdItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id : "
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txtEnterIdItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Id"
+                android:layout_toEndOf="@id/txtIdItemBooking"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/txtEmailItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email : "
+                android:layout_below="@id/txtNameItemBooking"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterEmailItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_toEndOf="@id/txtEmailItemBooking"
+                android:layout_below="@id/txtNameItemBooking"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txtNameItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name : "
+                android:layout_below="@id/txtIdItemBooking"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterNameItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_toEndOf="@id/txtNameItemBooking"
+                android:layout_below="@id/txtIdItemBooking"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtRoomItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Details : "
+                android:layout_below="@id/txtEmailItemBooking"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterRoomItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Details"
+                android:layout_toEndOf="@id/txtRoomItemBooking"
+                android:layout_below="@id/txtEmailItemBooking"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txtTypeItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Room Type : "
+                android:layout_below="@id/txtRoomItemBooking"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterTypeItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="type"
+                android:layout_toEndOf="@id/txtTypeItemBooking"
+                android:layout_below="@id/txtRoomItemBooking"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txtContactItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact : "
+                android:layout_below="@id/txtTypeItemBooking"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterContactItemBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact number"
+                android:layout_toEndOf="@id/txtContactItemBooking"
+                android:layout_below="@id/txtTypeItemBooking"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <Button
+                android:id="@+id/btnApproveBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Approve"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/txtEnterIdItemBooking"
+                android:layout_below="@id/txtEnterContactItemBooking"
+                android:layout_marginLeft="90dp"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

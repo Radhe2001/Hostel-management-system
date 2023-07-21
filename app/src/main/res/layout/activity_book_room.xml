@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookRoomActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:layout_height="550dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#482121">
+
+            <TextView
+                android:id="@+id/txtPageType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book your room"
+                android:textStyle="italic|bold"
+                android:layout_marginTop="30dp"
+                android:textColor="#F5EFE7"
+                android:layout_centerHorizontal="true"
+                android:textSize="35sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rlBookRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/txtPageType">
+                <TextView
+                    android:id="@+id/txtRoomDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room Details - "
+                    android:textStyle="italic|bold"
+                    android:textColor="#F5EFE7"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtRoomType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room Type"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="italic|bold"
+                    android:layout_toEndOf="@id/txtRoomDetails"
+                    android:textColor="#F5EFE7"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:layout_below="@id/rlBookRoom"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:hint="Enter your name"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:layout_below="@id/cardName"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter your email"/>
+
+            </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
+            android:id="@+id/cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:layout_below="@id/cardEmail"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="15dp">
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:inputType="phone"
+                android:hint="Enter current phone number"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:elevation="10dp"
+                android:layout_below="@id/cardNumber"
+                android:layout_marginTop="15dp"
+                app:cardCornerRadius="15dp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:inputType="textPassword"
+                    android:hint="Enter Password"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardPassword"
+                android:layout_marginTop="30dp"
+                android:elevation="10dp"
+                android:layout_marginLeft="210dp"
+                app:cardCornerRadius="15dp">
+
+                <Button
+                    android:id="@+id/btnButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Confirm"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold"
+                    android:background="@color/black"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

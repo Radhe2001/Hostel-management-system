@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtIdItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id : "
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txtEnterIdItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Id"
+                android:layout_toEndOf="@id/txtIdItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/txtMessageItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message : "
+                android:layout_below="@id/txtIdItem"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txtEnterMessageItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:layout_toEndOf="@id/txtMessageItem"
+                android:layout_below="@id/txtIdItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

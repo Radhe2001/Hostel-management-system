@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtIdItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id : "
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txtEnterIdItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Id"
+                android:layout_toEndOf="@id/txtIdItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/txtPlaceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place : "
+                android:layout_below="@id/txtReasonItem"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterPlaceItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place"
+                android:layout_toEndOf="@id/txtPlaceItem"
+                android:layout_below="@id/txtReasonItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txtReasonItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason : "
+                android:layout_below="@id/txtIdItem"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterReasonItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason"
+                android:layout_toEndOf="@id/txtReasonItem"
+                android:layout_below="@id/txtIdItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtLeaveItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave date : "
+                android:layout_below="@id/txtPlaceItem"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterLeaveItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave date"
+                android:layout_toEndOf="@id/txtLeaveItem"
+                android:layout_below="@id/txtPlaceItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txtReturnItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retrun date : "
+                android:layout_below="@id/txtLeaveItem"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterReturnItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Return date"
+                android:layout_toEndOf="@id/txtReturnItem"
+                android:layout_below="@id/txtLeaveItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/txtGuardianItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardian's contact : "
+                android:layout_below="@id/txtReturnItem"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/txtEnterGuardianItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact number"
+                android:layout_toEndOf="@id/txtGuardianItem"
+                android:layout_below="@id/txtReturnItem"
+                android:layout_marginLeft="5dp"
+                android:textSize="22sp" />
+
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Approve"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/txtEnterIdItem"
+                android:layout_marginLeft="80dp"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

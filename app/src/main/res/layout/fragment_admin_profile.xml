@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileStudentFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtProfileDetailsAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Details"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold|italic"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp"/>
+
+
+                <TextView
+                    android:id="@+id/txtNameAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:layout_below="@id/txtProfileDetailsAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="60dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txtEnterNameAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="italic"
+                    android:layout_below="@id/txtNameAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtEmailAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:layout_below="@id/txtEnterNameAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txtEnterEmailAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textStyle="italic"
+                    android:layout_below="@id/txtEmailAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtContactAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Number"
+                    android:textStyle="bold"
+                    android:layout_below="@id/txtEnterEmailAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txtEnterContactAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number"
+                    android:textStyle="italic"
+                    android:layout_below="@id/txtContactAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtIdAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Id"
+                    android:textStyle="bold"
+                    android:layout_below="@id/txtEnterContactAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txtEnterIdAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Id"
+                    android:textStyle="italic"
+                    android:layout_below="@id/txtIdAdmin"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
